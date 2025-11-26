@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Quiz App</title>
+    <link rel="stylesheet" href="F:\WEB\assignment.css">
+</head>
+<body>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="card fade">
+        <h1 class="title">Quiz App</h1>
+        <p class="subtitle">Test your knowledge!</p>
+        <button id="start-btn" class="btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="card hidden fade">
+        <h2 id="question-text" class="question"></h2>
+        <div id="options" class="options-container"></div>
+        <button id="next-btn" class="btn hidden">Next</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="card hidden fade">
+        <h1>Your Score: <span id="score"></span></h1>
+        <h2 id="result-message"></h2>
+        <button onclick="location.reload()" class="btn">Restart</button>
+    </div>
+
+<script src="F:\WEB\assignment.js"></script>
+</body>
+</html>
